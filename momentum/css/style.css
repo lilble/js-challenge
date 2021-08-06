@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@500;600;700&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: lightcyan;
+  font-family: "STIX Two Text", serif;
+}
+.hidden {
+  display: none;
+}
+#bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#greeting {
+  font-size: 30px;
+}
+#clock {
+  font-size: 70px;
+  margin: 50px 0 10px 0;
+}
+#quote {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 30px;
+}
+#login-form button {
+  color: lightcyan;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-weight: 700;
+  transition: background-color 0.3s ease-in-out;
+}
+#login-form button:hover {
+  background-color: rgba(255, 255, 0, 0.3);
+}
+#login-form input {
+  border: none;
+  border-radius: 11px;
+  width: 150px;
+  height: 30px;
+  padding-left: 15px;
+  box-shadow: 0px 0px 15px lightcyan;
+  margin: 30px 0;
+}
+#todo-form input {
+  border: none;
+  border-radius: 11px;
+  width: 230px;
+  height: 30px;
+  padding-left: 15px;
+  box-shadow: 0px 0px 15px lightcyan;
+}
+#todo-form input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+#todo-list li span {
+  font-size: 23px;
+}
+#todo-list li button {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 3px;
+  margin: 5px 0 5px 15px;
+  transition: background-color 0.5s ease-in-out;
+}
+#todo-list li button:hover {
+  background-color: pink;
+}
+#weather span {
+  margin: 5px;
+  font-size: 20px;
+  color: pink;
+}
